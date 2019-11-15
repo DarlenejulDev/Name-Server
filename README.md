@@ -3,7 +3,7 @@ This an application that has both Server-side and client side logic.
 
 Install: clone repo
 run npm install
-To run this application: 'node server.js"
+To run this application: 'node server.js'
 localhost:3000
 
 
