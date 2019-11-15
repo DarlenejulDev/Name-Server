@@ -33,11 +33,17 @@ app.get('/', (req, res) => {
 })
 
 app.post('/messages', (req, res) => {
+console.log(req.body.name)
+
+
+
+
+
   db.collection('messages').save({name: req.body.name}, (err, result) => {
     if (err) return console.log(err)
 
     console.log('saved to database')
-    res.redirect('/')
+    //res.redirect('/')
   })
 })
 app.put('/messages', (req, res) => {

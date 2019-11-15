@@ -6,13 +6,8 @@ btn.addEventListener('click',() =>{
 const input= document.querySelector("#nameInput").value
 
 fetch(`https://api.agify.io?name=${input}`,{
-  method: 'put',
-  headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify({
-    'name': input,
-    // 'age': age
+
   })
-})
     .then(res => res.json())
     // parse response as JSON (can be res.text() for plain response)
     .then(response => {
