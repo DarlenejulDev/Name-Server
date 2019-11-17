@@ -32,7 +32,7 @@ updateIt.addEventListener('click', function () {
   method: 'put',
   headers: {'Content-Type': 'application/json'},
   body: JSON.stringify({
-    'name': 'New linneeeee',
+    'name': 'New line has been added',
   })
 })
 .then(res => {
